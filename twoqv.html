@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Збери пазл</title>
+    <link rel="stylesheet" href="twoqv.css">
+</head>
+<body>
+    <h1>Збери пазл</h1>
+    <div id="pieces-container">
+        <h2>Деталі</h2>
+        <div class="puzzle-piece" draggable="true" id="piece1-1"><img src="joystick1.png" alt="Part 1"></div>
+        <div class="puzzle-piece" draggable="true" id="piece1-2"><img src="joystick2.png" alt="Part 2"></div>
+        <div class="puzzle-piece" draggable="true" id="piece1-3"><img src="joystick3.png" alt="Part 3"></div>
+        <div class="puzzle-piece" draggable="true" id="piece1-4"><img src="joystick4.png" alt="Part 4"></div>
+        <!-- Інші деталі пазлів також можна додати сюди -->
+    </div>
+    <div id="puzzle-container">
+        <div class="puzzle-wrapper">
+            <h2>Джойстик</h2>
+            <div class="puzzle" id="puzzle1">
+                <div class="dropzone" data-piece="piece1-1"></div>
+                <div class="dropzone" data-piece="piece1-2"></div>
+                <div class="dropzone" data-piece="piece1-3"></div>
+                <div class="dropzone" data-piece="piece1-4"></div>
+            </div>
+        </div>
+        <div class="puzzle-wrapper">
+            <h2>Монітор</h2>
+            <div class="puzzle" id="puzzle2">
+                <div class="dropzone" data-piece="piece2-1"></div>
+                <div class="dropzone" data-piece="piece2-2"></div>
+                <div class="dropzone" data-piece="piece2-3"></div>
+                <div class="dropzone" data-piece="piece2-4"></div>
+            </div>
+        </div>
+        <div class="puzzle-wrapper">
+            <h2>Правила безпеки</h2>
+            <div class="puzzle" id="puzzle3">
+                <div class="dropzone" data-piece="piece3-1"></div>
+                <div class="dropzone" data-piece="piece3-2"></div>
+                <div class="dropzone" data-piece="piece3-3"></div>
+                <div class="dropzone" data-piece="piece3-4"></div>
+            </div>
+        </div>
+        <div class="puzzle-wrapper">
+            <h2>Принтер</h2>
+            <div class="puzzle" id="puzzle4">
+                <div class="dropzone" data-piece="piece4-1"></div>
+                <div class="dropzone" data-piece="piece4-2"></div>
+                <div class="dropzone" data-piece="piece4-3"></div>
+                <div class="dropzone" data-piece="piece4-4"></div>
+            </div>
+        </div>
+    </div>
+    <script src="twoqv.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

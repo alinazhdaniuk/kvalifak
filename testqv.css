@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #331a4b;;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 40px; 
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px; /* Збільшення відступів */
+    background: rgba(220, 220, 220, 0.10);
+    color: #fff;
+    border-radius: 20px; /* Збільшення радіусу кутів */
+    border: 3px solid #9E68C8;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Збільшення тіні */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+.correct {
+    background-color: #28a745 !important;
+}
+
+.incorrect {
+    background-color: #dc3545 !important;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+.result-text {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color:#9E68C8;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #6D3B94;
+}
+
+.home{
+    background-color:#7300ca;;
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}

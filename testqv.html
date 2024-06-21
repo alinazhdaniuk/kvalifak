@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтерактивний тест з інформатики</title>
+    <link rel="stylesheet" href="testqv.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-page" class="page">
+            <button class="home"><a href="tasks.html">На головну</a></button>
+            <h1>Ласкаво просимо до тесту з інформатики!</h1>
+            <button onclick="startTest()">Почати тест</button>
+        </div>
+        <div id="test-page" class="page hidden">
+            <h2 id="question"></h2>
+            <div id="answers">
+                <button onclick="checkAnswer(0)"></button>
+                <button onclick="checkAnswer(1)"></button>
+                <button onclick="checkAnswer(2)"></button>
+                <button onclick="checkAnswer(3)"></button>
+            </div>
+        </div>
+        <div id="result-page" class="page hidden">
+    <h2 class="result-text">Ваш результат:</h2>
+    <p id="score"></p>
+    <button onclick="restartTest()">Почати знову</button>
+    <button  onclick="location.href='tasks.html'"onclick="backToHome()">На головну</button>
+</div>
+
+
+    <script src="testqv.js"></script>
+</body>
+</html>

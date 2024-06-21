@@ -1,0 +1,38 @@
+#container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightblue;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.item.selected {
+    background-color: lightgreen;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#buttons {
+    margin-top: 20px;
+}
